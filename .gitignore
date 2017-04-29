@@ -6,3 +6,10 @@ lib/
 pip-selfcheck.json
 
 v
+
+accessKeys.csv
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
