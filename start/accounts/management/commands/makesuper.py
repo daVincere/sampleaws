@@ -5,4 +5,4 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         User = get_user_model()
         if not User.objects.filter(username="hasime").exists():
-            User.objects.create_superuser("hasime, "", "pass1234")
+            User.objects.create_superuser("hasime", "hasime@dystanc.com", "pass1234")
