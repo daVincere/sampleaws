@@ -136,3 +136,14 @@ STATIC_URL = '/static/'
 
 AWS_ACCESS_KEY_ID = "AKIAJP7OFEBFNPVZ3YNA"
 AWS_SECRET_ACCESS_KEY = "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"
+
+if DEBUG:
+    MEDIA_URL = '/media/'
+
+    STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static", "static-only")
+
+    STATICFILES_DIRS = [
+            os.path.join(os.path.dirname(BASE_DIR), "static", "static"),
+        ]
+
+    MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static", "media")
